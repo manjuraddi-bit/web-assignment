@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Online Registration Form</h2>
+
+    <form id="regForm" action="submit.php" method="POST">
+
+        <label>Full Name</label>
+        <input type="text" name="fullname" id="fullname" required>
+
+        <label>Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label>Phone Number</label>
+        <input type="text" name="phone" id="phone" required>
+
+        <label>Address</label>
+        <textarea name="address" id="address" required></textarea>
+
+        <label>Course</label>
+        <select name="course" id="course" required>
+            <option value="">Select One</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Cyber Security">Cyber Security</option>
+        </select>
+
+        <button type="submit" id="submitBtn">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
